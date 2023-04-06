@@ -1,0 +1,26 @@
+@use 'index.scss' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+	scroll-padding-top: 56px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+	font-size: 1.8rem;
+	font-family: "Montserrat", sans-serif;
+    background-color: $color-1;
+}
+
+//nav
+.navbar {
+    position: fixed;
+}
