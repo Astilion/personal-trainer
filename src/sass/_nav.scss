@@ -1,0 +1,159 @@
+@use "colors.scss" as *;
+//nav
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: $color-2;
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 8rem;
+	}
+	&__logo {
+		a {
+			text-decoration: none;
+			img {
+				height: 6rem;
+				width: 20rem;
+				border-radius: 8px;
+			}
+		}
+	}
+
+	.burger-btn {
+		font: inherit;
+		display: inline-block;
+		margin: 0;
+		padding: 1.5rem;
+		text-transform: none;
+		border: 0;
+		background-color: transparent;
+		cursor: pointer;
+		&:hover {
+			.burger-btn__inner, .burger-btn__inner::before, .burger-btn__inner::after {
+				background-color: $color-3;
+			}
+		}
+
+		&__box {
+			position: relative;
+			display: inline-block;
+			width: 4rem;
+			height: 2.4rem;
+		}
+		&__inner {
+			top: 50%;
+			position: absolute;
+			width: 4rem;
+			height: 0.4rem;
+			border-radius: 4px;
+			background-color: $color-4;
+			transition: background-color 0.3s;
+
+			&::before,
+			&::after {
+				display: block;
+				position: absolute;
+				content: "";
+				width: 4rem;
+				height: 0.4rem;
+				background-color: $color-4;
+				transition: background-color 0.3s;
+			}
+			&::before {
+				top: -1rem;
+			}
+			&::after {
+				bottom: -1rem;
+			}
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 8rem;
+		right: 0;
+		height: calc(100vh - 8rem);
+		width: 100vw;
+		background-color: $color-2;
+		transition: transform 0.5s, opacity 0.5s;
+		transform: translateX(100%);
+		opacity: 0;
+		overflow: auto;
+	}
+	&__item {
+        position: relative;
+		display: inline-block;
+		margin-top: 1.5em;
+		padding: 1em 2em;
+		font-size: 2rem;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $color-4;
+		transition: color 0.3s;
+
+		&:hover  {
+			color: $color-3;
+		}
+        &::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 3px;
+			width: 100%;
+			background-color: $color-3;
+			transform: scaleX(0);
+			transform-origin: right;
+			transition: transform 0.3s ease-in;
+		}
+
+		&:hover::after {
+			transform: scaleX(1);
+			transform-origin: left;
+		}
+	}
+}
+.active {
+	transform: translateX(0);
+    opacity: 1;
+}
+
+@media (min-width:992px){
+    .navbar {
+        &__items {
+            flex-direction: row;
+            justify-content: space-between;
+            position: static;
+            height: 8rem;
+            width: auto;
+            transform: translateX(0);
+            opacity: 1;
+            background: none;
+            overflow: hidden;
+        }
+        &__item {
+            text-align: center;
+            margin-top: 0;
+            padding: 1em;
+            font-size: 1.6rem;
+        }
+        .burger-btn {
+            display: none;
+        }
+    }
+}
+
+@media (min-width:1200px){
+    .navbar{
+        &__item {
+            font-size: 1.9rem;
+        }
+    }
+}
