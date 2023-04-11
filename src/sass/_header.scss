@@ -24,12 +24,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         text-transform: uppercase;
         top: 40%;
         color: $color-4;
     }
     &__h1 {
         font-size: 3.8rem;
+        margin-bottom: 0.4em;
     }
     &__p {
         font-size: 2.8rem;

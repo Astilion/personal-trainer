@@ -1,0 +1,58 @@
+@use 'colors.scss' as *;
+
+.about {
+    padding: 3em 0;
+
+    .hero-img {
+        position: relative;
+        bottom: 0;
+        left: calc(50% - 150px);
+        flex-wrap: wrap ;
+        height: 80vh;
+        width: 300px;
+        max-height: 500px;
+        background-image: url('../img/Videoframe_20220405_094431_com.huawei.himovie.overseas.png');
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+        border-radius: 8px;
+    }
+}
+.about2 {
+    padding: 1em 0;
+
+    .accordion {
+        width: 100%;
+        background-color: $color-1;
+        border-radius: 6px;
+        &__box {
+            margin: 1em 0;
+        }
+        &__btn {
+            padding: 1em;
+            width: 100%;
+            font-size: 3rem;
+            text-align: left;
+            border-radius: 6px;
+            border: none;
+            transition: background-color 0.3s;
+            background-color: $color-2;
+            cursor: pointer;
+            &:hover, &:focus {
+                background-color: $color-3;
+                color: $color-1;
+                outline: none;
+            }
+        }
+        &__info {
+            display: none;
+            padding: 1em 2em;
+        }
+        &--active {
+            display: block;
+        }
+    }
+}
+.no-pointer-events {
+    pointer-events: none;
+}
