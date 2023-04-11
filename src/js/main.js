@@ -9,15 +9,23 @@ const accordionBtns= document.querySelectorAll('.accordion__btn');
 function openAccordionItems() {
     if (this.nextElementSibling.classList.contains('accordion--active')) {
         this.nextElementSibling.classList.remove('accordion--active');
+        this.querySelector('.ti-plus').style.display = 'inline'
+		this.querySelector('.feather').style.display = 'none'
     } else {
         closeAccordionItems();
         this.nextElementSibling.classList.toggle('accordion--active');
+        this.querySelector('.ti-plus').style.display = 'none'
+		this.querySelector('.feather').style.display = 'inline'
     }
 }
 
+
 const closeAccordionItems = () => {
     const allActiveItems = document.querySelectorAll('.accordion__info');
-    allActiveItems.forEach(item => item.classList.remove('accordion--active'))
+    allActiveItems.forEach(item => {
+    item.previousElementSibling.querySelector('.feather').style.display = 'none'
+    item.previousElementSibling.querySelector('.ti-plus').style.display = 'inline';
+    item.classList.remove('accordion--active')})
 }
 const clickOutsideAccordion = e => {
 	if (
