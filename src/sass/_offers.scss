@@ -1,0 +1,95 @@
+@use 'colors.scss' as *;
+
+.offers {
+    &__nav {
+        margin-bottom: 2em;
+    }
+   &__nav-item {
+    display: inline-block;
+    margin: 0.2em 0;
+    padding: 0.5em 1em;
+    text-align: center;
+    width: 100%;
+    border: 1px solid $color-3;
+    background-color: $color-2;
+    color: $color-4;
+    border-radius: 8px;
+    font-size: 2.2rem;
+    cursor: pointer;
+    transition: background-color .3s;
+    &:hover, &:focus {
+        background-color: $color-3;
+    }
+   } 
+   &__section {
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   &__card {
+    margin: 0 0 2em 1em;
+    width: 300px;
+    max-height: 321px;
+    background-color: $color-2;
+    border-radius: 8px;
+    border: 1px solid $color-3;
+    box-shadow: 2px 2px 2px rgb(35, 35, 35);
+    transition: transform .3s;
+    &:hover, &:focus {
+        transform: scale(98%);
+    }
+   }
+   &__card-title {
+    margin-top: .5em;
+    padding: .8em;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+   }
+   &__card-price {
+    margin-bottom: .5em;
+    padding: 0.8em;
+    font-size: 4.5rem;
+    font-weight: bold;
+   }
+   &__btn {
+    margin-bottom: 2em;
+    padding: 0.5em 1em;
+    font-size: 2rem;
+    background-color: $color-3;
+    color: $color-4;
+    border-radius: 8px;
+    transition: bacground-color .3s, color .3s;
+    &:hover, &:focus {
+        background-color: $color-1;
+        color: $color-3;
+    }
+   }
+}
+
+.offers__section-active {
+    display: flex;
+}
+
+@media (min-width: 768px){
+.offers{
+    &__nav {
+    display: flex;
+    justify-content: center;}
+    &__nav-item {
+        margin-right: 0.5em;
+        font-size: 2.4rem;
+        width: auto;
+    }
+}}
+
+@media (min-width: 992px) {
+    .offers{
+        &__section {
+            flex-direction: row;
+        }
+    }
+}

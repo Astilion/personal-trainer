@@ -36,6 +36,7 @@
             border-radius: 6px;
             border: none;
             transition: background-color 0.3s;
+            color: $color-4;
             background-color: $color-2;
             cursor: pointer;
             &:hover, &:focus {
@@ -47,6 +48,9 @@
         &__info {
             display: none;
             padding: 1em 2em;
+        }
+        &__text{
+            font-size: 2.3rem;
         }
         &--active {
             display: block;
