@@ -3,12 +3,12 @@
         <div class="container">
             <h2 class="section-title">Offers</h2>
             <ul class="offers__nav">
-                <li class="offers__nav-item">All</li>
-                <li class="offers__nav-item">Diet</li>
-                <li class="offers__nav-item">Training</li>
-                <li class="offers__nav-item">Complex</li>
+                <li class="offers__nav-item offers__nav-item--active" data-id="all-offers">All</li>
+                <li class="offers__nav-item" data-id="diet">Diet</li>
+                <li class="offers__nav-item" data-id="training">Training</li>
+                <li class="offers__nav-item" data-id="complex">Complex</li>
             </ul>
-            <div class="offers__section">
+            <div class="offers__section" id="diet">
                 <div class="offers__card">
                     <h3 class="offers__card-title">Diet #1</h3>
                     <p class="offers__card-price">49$</p>
@@ -25,7 +25,7 @@
                     <button class="offers__btn">Choose</button>
                 </div>
             </div>
-            <div class="offers__section">
+            <div class="offers__section" id="training">
                 <div class="offers__card">
                     <h3 class="offers__card-title">Training #1</h3>
                     <p class="offers__card-price">60$</p>
@@ -42,7 +42,7 @@
                     <button class="offers__btn">Choose</button>
                 </div>
             </div>
-            <div class="offers__section">
+            <div class="offers__section" id="complex">
                 <div class="offers__card">
                     <h3 class="offers__card-title">Diet + training #1</h3>
                     <p class="offers__card-price">90$</p>

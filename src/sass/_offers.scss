@@ -20,6 +20,10 @@
     &:hover, &:focus {
         background-color: $color-3;
     }
+    &--active {
+        background-color: $color-3;
+        color: $color-4;
+    }
    } 
    &__section {
     margin-bottom: 1em;
@@ -61,7 +65,9 @@
     font-size: 2rem;
     background-color: $color-3;
     color: $color-4;
+    border: none;
     border-radius: 8px;
+    box-shadow: 1px 1px 1px rgb(88, 88, 88);
     transition: bacground-color .3s, color .3s;
     &:hover, &:focus {
         background-color: $color-1;
@@ -70,9 +76,6 @@
    }
 }
 
-.offers__section-active {
-    display: flex;
-}
 
 @media (min-width: 768px){
 .offers{
