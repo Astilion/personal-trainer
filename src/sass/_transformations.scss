@@ -1,0 +1,47 @@
+@use "colors.scss" as *;
+
+.slider {
+	position: relative;
+	width: 350px;
+	height: 400px;
+	// overflow: hidden;
+	border-radius: 8px;
+	&__box {
+		display: flex;
+		transform: translateX(0);
+		transition: transform 0.5s;
+	}
+	&__img {
+        width: 100%;
+        object-fit: cover;
+
+	}
+}
+
+.btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0.5em 0.8em;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-size: 2rem;
+	border: none;
+	cursor: pointer;
+
+	&__left {
+		left: 0;
+	}
+	&__right {
+		right: 0;
+	}
+	&__arrow {
+		display: block;
+		transition: transform 0.3s;
+	}
+	&:hover {
+		.btn__arrow {
+			transform: scale(0.7);
+		}
+	}
+}
