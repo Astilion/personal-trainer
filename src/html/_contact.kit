@@ -1,22 +1,35 @@
 <section id="contact">
     <div class="contact">
         <div class="container">
-            <h2 class="section-title"></h2>
+            <h2 class="section-title">Contact</h2>
         </div>
         <div class="contact-wrapper"></div>
         <div class="contact__section">
             <div class="contact__details">
                 <div class="contact__details-title">
-                    <h3></h3>
-                    <p></p>
-                    <p></p>
+                    <h3>Write to me</h3>
+                    <p>Want ask some questions?</p>
+                    <p>Use options below or use contact form!</p>
                 </div>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>contact@personaltrainer.pl</p>
+                <p>Facebook profile</p>
+                <p>Instagram account</p>
             </div>
         </div>
-        <form action="" class="contact__form"></form>
+        <form action="" class="contact__form">
+            <div class="contact__box">
+                <input type="text" class="contact__input" id='contact-name' name="contact-name" required>
+                <label for="contact-name" class="contact__label">Name</label>
+            </div>
+            <div class="contact__box">
+                <input type="text" id="contact-mail" class="contact__input" name="contact-mail" required>
+                <label for="contact-mail" class="contact__label">E-mail address</label>
+            </div>
+            <div class="contact__box">
+                <textarea name="contact-msg" class="contact__textarea" id="contact-msg" cols="30" rows="10" required></textarea>
+                <label for="contact-msg" class="contact__label">Your message</label>
+            </div>
+        </form>
         <p class="privacy-policy"></p>
     </div>
 </section>
