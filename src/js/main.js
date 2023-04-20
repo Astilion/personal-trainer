@@ -10,6 +10,8 @@ const allOffersBtn = document.querySelector('[data-id="all-offers"]');
 const offersList = document.querySelectorAll('.offers__section');
 const offersListNavItems = document.querySelectorAll('.offers__nav-item');
 
+const footerYear = document.querySelector('.footer__year')
+
 const handleNav = () => {
     navItems.classList.toggle('active')
     document.body.classList.toggle('nav-open')
@@ -134,7 +136,13 @@ navItem.forEach(item => {
     item.addEventListener('click', closeNav)
 })
 
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.textContent = year
+}
+
 accordionBtns.forEach(btn => btn.addEventListener("click", openAccordionItems));
 window.addEventListener("click", clickOutsideAccordion);
 allOffersBtn.addEventListener('click', showAllOffersList)
 offersListNavItems.forEach(item => item.addEventListener('click', showOffersList))
+handleCurrentYear()
