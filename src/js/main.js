@@ -12,6 +12,29 @@ const offersListNavItems = document.querySelectorAll('.offers__nav-item');
 
 const footerYear = document.querySelector('.footer__year')
 
+const scrollSpySections = document.querySelectorAll('.scrollspy')
+
+const handleScrollSpy = () => {
+	if(document.body.classList.contains('main-page')){
+		const sections = []
+
+		scrollSpySections.forEach(section => {
+			if (window.scrollY <= section.offsetTop + section.offsetHeight - 75) {
+
+				
+				sections.push(section)
+				const activeSection = document.querySelector(`[href*="${sections[0].id}"]`)
+				
+				console.log(activeSection);
+				navItem.forEach(menuItem => menuItem.classList.remove('current-section'))
+
+				activeSection.classList.add('current-section')
+			}
+		})
+	
+	}
+}
+
 const handleNav = () => {
     navItems.classList.toggle('active')
     document.body.classList.toggle('nav-open')
@@ -145,4 +168,5 @@ accordionBtns.forEach(btn => btn.addEventListener("click", openAccordionItems));
 window.addEventListener("click", clickOutsideAccordion);
 allOffersBtn.addEventListener('click', showAllOffersList)
 offersListNavItems.forEach(item => item.addEventListener('click', showOffersList))
+window.addEventListener('scroll', handleScrollSpy)
 handleCurrentYear()

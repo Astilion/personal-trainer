@@ -127,6 +127,9 @@
 	transform: translateX(0);
     opacity: 1;
 }
+.current-section {
+	color:$color-3;
+}
 
 @media (min-width:992px){
     .navbar {
