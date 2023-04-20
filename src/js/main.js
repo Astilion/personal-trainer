@@ -25,7 +25,6 @@ const handleScrollSpy = () => {
 				sections.push(section)
 				const activeSection = document.querySelector(`[href*="${sections[0].id}"]`)
 				
-				console.log(activeSection);
 				navItem.forEach(menuItem => menuItem.classList.remove('current-section'))
 
 				activeSection.classList.add('current-section')
