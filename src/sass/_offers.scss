@@ -2,7 +2,7 @@
 
 .offers {
 	position: relative;
-	background-image: url("../../dist/img/gym-s.jpg");
+	background-image: url("../img/gym-s.jpg");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -54,35 +54,35 @@
 	}
 	&__diet {
 		.offers__card:nth-child(1){
-			background-image: url('../../dist/img/salad-2756467_640.jpg');
+			background-image: url('../img/salad-2756467_640.jpg');
 		}
 		.offers__card:nth-child(2){
-			background-image: url('../../dist/img/vegetables-1006694_640.jpg');
+			background-image: url('../img/vegetables-1006694_640.jpg');
 		}
 		.offers__card:nth-child(3){
-			background-image: url('../../dist/img/vegetables-1085063_640.jpg');
+			background-image: url('../img/vegetables-1085063_640.jpg');
 		}
 	}
 	&__training {
 		.offers__card:nth-child(1){
-			background-image: url('../../dist/img/woman-2260736_640.jpg');
+			background-image: url('../img/woman-2260736_640.jpg');
 		}
 		.offers__card:nth-child(2){
-			background-image: url('../../dist/img/crossfit-1126999_640.jpg');
+			background-image: url('../img/crossfit-1126999_640.jpg');
 		}
 		.offers__card:nth-child(3){
-			background-image: url('../../dist/img/dumbbell-1966702_640.jpg');
+			background-image: url('../img/dumbbell-1966702_640.jpg');
 		}
 	}
 	&__complex {
 		.offers__card:nth-child(1){
-			background-image: url('../../dist/img/dumbbells-2465478_640.jpg');
+			background-image: url('../img/dumbbells-2465478_640.jpg');
 		}
 		.offers__card:nth-child(2){
-			background-image: url('../../dist/img/lifestyle-change-1430599_640.jpg');
+			background-image: url('../img/lifestyle-change-1430599_640.jpg');
 		}
 		.offers__card:nth-child(3){
-			background-image: url('../../dist/img/dumbbells-2465478_640.jpg');
+			background-image: url('../img/dumbbells-2465478_640.jpg');
 		}
 	}
 	&__card {
