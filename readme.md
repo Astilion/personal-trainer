@@ -38,10 +38,9 @@ Project Doesn't need instalation, just run live demo [_here_](https://astilion.g
 ## Project Status
 Project is: _in progress_ 
 To do:
-- meta tags
 - removal of unwanted files
 - removal of duplicates of styling in css
-- organise javaScript code
+
 
 
 
