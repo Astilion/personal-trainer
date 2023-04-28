@@ -21,23 +21,23 @@
 	&__details {
 		position: relative;
 		padding: 1.5em;
+		height: 100%;
 		background-color: $color-3;
 		color: $color-4;
 		border-radius: 4px;
-		height: 100%;
 	}
 	&__details-title {
 		margin-bottom: 2em;
 		p{
-			font-size: 2.4rem;
 			margin-bottom: 1em;
+			font-size: 2.4rem;
 		}
 	}
 	h3 {
 		margin-bottom: 1em;
-		font-size: 2.8rem;
 		text-align: center;
 		text-transform: uppercase;
+		font-size: 2.8rem;
 		font-weight: bold;
 		text-shadow: 1px 2px 2px black;
 	}
@@ -51,20 +51,20 @@
 		font-size: 3rem;
 	}
 	&__box {
+		position: relative;
 		display: flex;
 		flex-direction: column;
-		position: relative;
 		width: 100%;
 	}
 	&__input {
 		margin-bottom: 2em;
 		padding: 1em;
 		background: none;
+		color: $color-4;
 		border: 1px solid $color-3;
 		border-radius: 4px;
-		outline: none;
-		color: $color-4;
 		font-size: 1.4rem;
+		outline: none;
 	}
 	&__input:focus, .contact__textarea:focus{
 		border-bottom: 3px solid $color-3;
@@ -74,25 +74,25 @@
 	.contact__textarea:focus ~,
 	.contact__textarea:valid ~ {
 		.contact__label {
-			transform: translate(15px, -30px);
 			font-weight: bold;
+			transform: translate(15px, -30px);
 		}
 	}
 	&__label {
 		position: absolute;
 		top: 14px;
 		padding: 0 1em;
-		font-size: 1.6rem;
 		color: $color-4;
+		font-size: 1.6rem;
 		transition: transform .3s;
 	}
 	&__textarea {
 		padding: 1em;
 		background: none;
+		color: $color-4;
 		border: 1px solid $color-3;
 		border-radius: 4px;
 		outline: none;
-		color: $color-4;
 		font-size: 1.4rem;
 	}
 
@@ -112,8 +112,8 @@
 		}
 	}
 	.privacy-policy {
-		font-size: 1.6rem;
 		margin-bottom: 3rem;
+		font-size: 1.6rem;
 	}
 }
 

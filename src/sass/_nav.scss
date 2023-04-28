@@ -141,16 +141,16 @@
             position: static;
             height: 8rem;
             width: auto;
+            background: none;
             transform: translateX(0);
             opacity: 1;
-            background: none;
             overflow: hidden;
         }
         &__item {
-            text-align: center;
-            margin-top: 0;
+			margin-top: 0;
             padding: 1em;
             font-size: 1.6rem;
+            text-align: center;
         }
         .burger-btn {
             display: none;
