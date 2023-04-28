@@ -8,7 +8,6 @@
 * [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Project Status](#project-status)
-* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 
 
@@ -38,16 +37,9 @@ Project Doesn't need instalation, just run live demo [_here_](https://astilion.g
 ## Project Status
 Project is: _in progress_ 
 To do:
-- removal of unwanted files
+- cookie box
 - removal of duplicates of styling in css
 
-
-
-
-## Acknowledgements
-
-
-- Many thanks to Mateusz Maj, creator of MMC School, udemy teacher - (_link_) (https://www.udemy.com/user/majek-2/).
 
 ## Contact
 Created by Astilion - feel free to contact me mkaminski.contact@gmail.com
